@@ -1,34 +1,31 @@
-{% extends 'base.html' %}
-{% load static %}
-
-
-{% block content %}
-<div class="main-container">
-	<div class="row">
-		<div class="col p-5">
-			<h1>¡Bienvenidos!</h1>
-			<p>
-				Actualmente las instituciones	educativas se encuentran inmersas en ambtientes altamente competitivos
-				por lo que deben contar con procesos de calidad y acreditacion para determinar su exito.
-			</p>
-		</div>
-		<div class="col">
-			<h1>Imagen</h1>
-		</div>
-	</div>
-</div>
-<br><br>
-<div class="container">
-	<div class="row">
-		<div class="col">
-			<div class="card">
-				<div class="card-body">
-					<h1>Presidente</h1>
-					<h2>Presidente Suplente</h2>
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="row main-container-bienvenidos justify-content-center align-items-center">
+			<div class="col-sm-6 txt-bienvenidos">
+				<h1>¡Bienvenidos!</h1>
+					<p>
+						Actualmente las instituciones educativas se encuentran inmersas en
+						ambientes altamente competitivos por lo que deben contar con procesos de
+						calidad y acreditación para determinar su éxito, por tal motivo
+						Editorial Santillana y su Entidad de Certificación y Evaluación (ECE)
+						ofrece capacitación, evaluación y certificación en diversos estándares
+						aprobados por el Consejo Nacional de Normalización y Certificación de
+						Competencias Laborales (CONOCER).
+					</p>
+			</div>
+			<div class="col-sm-6 img-bienvenidos">
+				<div class="d-flex justify-content-center">
+					<img src="{% static 'images/img_sece_01.png' %}" class="img-fluid">
 				</div>
 			</div>
-		</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-sm-12 text-center container-quienes-somos">
+		<h1>¿Q<span class="txt-h1-quienes-somos">uienes Somos?</span></h1>
+				<p>Somos una institución acreditada por CONOCER como Entidad de Certificación y Evaluación (ECE), con experiencia en capacitación, preparación de candidatos a evaluación y certificación. De esta manera Editorial Santillana contribuye en el desarrollo de personas competentes que hacen más productiva nuestra sociedad para el beneficio de todos los mexicanos.
+					Nuestra aportación tanto en la formación de capital humano como en la evaluación y certificación de competencias es fundamental para acelerar la competitividad económica, el desarrollo educativo y el progreso social que requiere nuestro país.
+				</p>
 	</div>
+	<div class="col-sm-6"></div>
 </div>
 {% endblock content %}
-    

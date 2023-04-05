@@ -1,0 +1,77 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+}
+
+.navbar {
+	height: 50px !important;
+}
+
+.green-var {
+	background:   rgba(128,203,122,1);
+	height: 28px;
+}
+
+.main-container-bienvenidos {
+	background:  linear-gradient(0deg, rgba(33,166,164,1), rgba(128,203,122,1));
+}
+
+
+@media only screen and (min-width: 480px) {
+	
+	.container {
+		width: 480px;
+	}
+		
+	}
+
+
+@media only screen and (min-width: 1280px) {
+
+	.container {
+		width: 1280px;
+	}
+	/* Propiedades Bienvenidos */
+	.container-bienvenidos {
+		width: 1120px;
+		height: 531px;
+		margin-right: 80px;
+		margin-left: 80px;
+		background-color: brown;
+	}
+
+	.txt-bienvenidos {
+		width: 483px;
+		color: white;
+	}
+
+	.img-bienvenidos {
+		width: 637px;
+		height: 531px;
+
+	}
+
+	/* Propiedades Quienes Somos */
+
+	.container-quienes-somos {
+		width: 838px !important;
+		height: 396px;
+		margin-top: 80px;
+		
+	}
+
+	.txt-h1-quienes-somos {
+		color:  #ff7b7b;
+	}
+
+	.container-quienes-somos p {
+		text-align: justify;
+		
+	}
+		
+	}
+	
