@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
-<div class="row main-container-bienvenidos justify-content-center align-items-center">
-			<div class="col-sm-6 txt-bienvenidos">
+<div class="row bg-green-lima justify-content-center align-items-center">
+			<div class="col-sm-6 txt-white col-483">
 				<h1>¡Bienvenidos!</h1>
 					<p>
 						Actualmente las instituciones educativas se encuentran inmersas en
@@ -12,7 +12,7 @@
 						Competencias Laborales (CONOCER).
 					</p>
 			</div>
-			<div class="col-sm-6 img-bienvenidos">
+			<div class="col-sm-6 img-head">
 				<div class="d-flex justify-content-center">
 					<img src="{% static 'images/img_sece_01.png' %}" class="img-fluid">
 				</div>
@@ -21,11 +21,35 @@
 
 <div class="row justify-content-center">
 	<div class="col-sm-12 text-center container-quienes-somos">
-		<h1>¿Q<span class="txt-h1-quienes-somos">uienes Somos?</span></h1>
+		<h1>¿Q<span class="txt-orange">uienes Somos?</span></h1>
 				<p>Somos una institución acreditada por CONOCER como Entidad de Certificación y Evaluación (ECE), con experiencia en capacitación, preparación de candidatos a evaluación y certificación. De esta manera Editorial Santillana contribuye en el desarrollo de personas competentes que hacen más productiva nuestra sociedad para el beneficio de todos los mexicanos.
 					Nuestra aportación tanto en la formación de capital humano como en la evaluación y certificación de competencias es fundamental para acelerar la competitividad económica, el desarrollo educativo y el progreso social que requiere nuestro país.
 				</p>
 	</div>
-	<div class="col-sm-6"></div>
+</div>
+
+<div class="row section-cards">
+	<div class="col-sm-6 d-flex justify-content-center">
+		<div class="card card-quienes-somos card-vision  text-center">
+			<img src="{% static 'icons/icon_flecha.svg' %}" class="icons-br position-absolute start-50 translate-middle " alt="">
+			<div class="card-body d-flex flex-column justify-content-center align-center">
+				<h2 class="card-title">Visión</h2>
+				<p class="card-text">Lograr el reconocimiento nacional e internacional al convertirnos en un referente de productividad y competitividad consolidando el liderazgo en el sector educativo y del Sistema Nacional de Competencias.</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-6 d-flex justify-content-center">
+		<div class="card card-quienes-somos card-etica text-center">
+			<img src="{% static 'icons/icon_bascula.svg' %}" class="icons-br position-absolute start-50 translate-middle" alt="">
+			<div class="card-body d-flex flex-column justify-content-center align-center">
+				<h2 class="card-title">Código de ética</h2>
+				<p class="card-text">Conoce nuestro código de ética, un instrumento que muestras las normas, reglamentos y valores que han sido establecidos para regular nuestras actividades.             </p>
+				<div class="d-flex justify-content-center align-center">
+					<a href="" class="btn btn-codigo-etica">Ver detalle ></a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
 </div>
 {% endblock content %}
