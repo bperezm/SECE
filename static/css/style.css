@@ -155,5 +155,17 @@ body {
 			padding: 0;
 	}
 
+	/* Timeline - Certificación */
+	.timeline-container {
+		width: 1120px;
+		height: 896px;
+		background-color: #fff8f2;
+	}
+
+	.timeline {
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 3px 1fr;
+	}
 
 }
