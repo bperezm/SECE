@@ -14,3 +14,8 @@ def certificacion(request):
 def estandares(request):
     template_name = 'santillana/estandares.html'
     return render(request, template_name, {})
+
+
+def conocer(request):
+    template_name = 'santillana/conocer.html'
+    return render(request, template_name, {})

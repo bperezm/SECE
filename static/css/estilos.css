@@ -81,6 +81,25 @@ body {
 	border-radius: 50%;
 }
 
+.icons__sector {
+	width: 75px;
+	height: 75px;
+	padding: 10px;
+	
+
+}
+
+.white__point {
+	width: 92px;
+	height: 92px;
+	padding: 10px;
+	margin: 0px;
+	background-color: white;
+	border-radius: 50%;display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 @media only screen and (min-width: 480px) {
 	
 	.container {
@@ -445,6 +464,30 @@ body {
 
 	.card__txt__estandares {
 		padding: 20px;
+	}
+
+	.section__conocer {
+		width: 1280px;
+		height: 826px;
+		background-color: #fffcf9;
+		border-radius: 30px;
+	}
+
+	.cards__conocer {
+		height: 456px;
+		background-color: #ff7b7b;
+		margin-right: 4px;
+		margin: 0;
+		padding: 0;
+		
+	}
+
+	.card__sector__empresarial {
+		width: 412px;
+		background-color: #ff7b7b;
+		margin: 0;
+		padding: 0;
+
 	}
 }
 	
