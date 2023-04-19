@@ -168,4 +168,8 @@ body {
 		grid-template-columns: 1fr 3px 1fr;
 	}
 
+	.costos-columna > ul > li{
+		margin-top: 10px;
+		color: aquamarine;
+	}
 }

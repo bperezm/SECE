@@ -73,6 +73,14 @@ body {
 	color: #3ebff0;
 }
 
+.icons__92 {
+	width: 92px;
+	height: 92px;
+	padding: 15px;
+	background-color: white;
+	border-radius: 50%;
+}
+
 @media only screen and (min-width: 480px) {
 	
 	.container {
@@ -258,6 +266,10 @@ body {
 		height: 338px;
 		margin-top: 20px;
 	}
+
+	.section__costos__requisitos {
+		color: white;
+	}
    
 	.costos__requerimientos__container {
 		width: 1120px;
@@ -280,6 +292,159 @@ body {
 		background-color: white;
 		border-radius: 50%;
 		padding: 10px;
+	}
+
+	.costos__columna {
+		width: 460px; 
+		margin-left: 100px; 
+		margin-top: 20px;
+	}
+
+	.requisitos__columna {
+		width: 460px; 
+		margin-right: 100px; 
+		margin-top: 20px;
+	}
+
+	.costos__columna > ul > li{
+		margin-top: 20px;
+	}
+
+	.requisitos__columna > ul > li{
+		margin-top: 20px;
+	}
+
+	.btn__requisitos {
+		width: 200px;
+		height: 40px;
+		background-color: white;
+    border: none;
+    border-radius: 30px;
+		color: black;
+	}
+
+	/* Derechos y Obligaciones */
+	.section__derechos__obligaciones {
+		justify-content: center;
+		align-items: center;
+		margin-top: 100px;
+		margin-bottom: 180px;
+	}
+
+	.container__derechos__obligaciones {
+		width: 838px;
+		height: 226px;
+		background-color: #ffab48;
+		margin: auto;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		border-radius: 80px;
+	}
+
+	.txt__derechos__obligaciones {
+		color: white;
+		margin: 0px 100px 0px 100px;
+	}
+
+	.icon__derechos {
+		width: 92px;
+		height: 92px;
+		padding: 15px;
+		background-color: white;
+		border-radius: 50%;
+	}
+
+	.card__derechos__obligaciones {
+		width: 838px;
+		height: 266px;
+		background-color: #ffab48;
+    color: white;
+	}
+
+	.card__txt__derechos{
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+	.btn__derechos {
+		width: 200px;
+		height: 40px;
+		background-color: white;
+    border: none;
+    border-radius: 30px;
+		color: black;
+	}
+
+	/* Estandares de Competencia */
+	.txt__container__estandar__competencias {
+		margin-top: 80px;
+		height: 220px;
+		
+	}
+
+	.txt__estandares {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+
+	.cards__container__estandar {
+		width: 1120px;
+		height: 1150px;
+		background-color: #fff8f2;
+		margin-left: 80px;
+		margin-right: 80px;
+		margin-bottom: 150px;
+		border-radius: 50px;
+	}
+
+	.cards__section__estandares {
+		margin-top: 70px;
+	}
+
+	.txt__estandares__disponibles {
+		margin-top: 74px;
+	}
+
+	/* Cards Estandares */
+
+	.card__estandares__red {
+		width: 348px;
+		height: 361px;
+		background-color: #ff7b7b;
+    color: white;
+	}
+
+	.card__estandares__orange {
+		width: 348px;
+		height: 361px;
+		background-color: #ffab48;
+    color: white;
+	}
+
+	.card__estandares__blue {
+		width: 348px;
+		height: 361px;
+		background-color: #3ebff0;
+    color: white;
+	}
+
+	.card__estandares__purple {
+		width: 348px;
+		height: 361px;
+		background-color: #bf6bff;
+    color: white;
+	}
+
+	.card__estandares__green {
+		width: 348px;
+		height: 361px;
+		background-color: #47b87f;
+    color: white;
+	}
+
+	.card__txt__estandares {
+		padding: 20px;
 	}
 }
 	
