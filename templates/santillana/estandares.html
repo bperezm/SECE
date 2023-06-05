@@ -1,136 +1,122 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
-<div class="row main-container-certificacion justify-content-center align-items-center">
-	<div class="col-sm-6 col-483">
-		<h1>Estándares de <br><span class="txt-green-st">Competencia Laboral (EC)</span></h1>
-		<p>
+<div class="row row-cols-1 row-cols-xl-2 justify-content-center align-items-center bg-green-scale">
+	<div class="col col-xl-5 px-4 cor-white ">
+		<h1 class="fw-bold">Estándares de <br><span class="cor-lemon">Competencia Laboral (EC)</span></h1>
+		<p class="mt-4">
 			¿Qué es un EC?
-			Es un documento oficial aplicable en toda la República Mexicana, aprobado por el Comité técnico del CONOCER y publicado en el Diario Oficial de la Federación, que servirá como referente para evaluar y certificar la competencia laboral de las personas y que describe en términos de resultados, el estándar o patrón del desempeño eficiente de una función laboral.
+			Es un documento oficial aplicable en toda la República Mexicana, aprobado por el Comité técnico del CONOCER y
+			publicado en el Diario Oficial de la Federación, que servirá como referente para evaluar y certificar la
+			competencia laboral de las personas y que describe en términos de resultados, el estándar o patrón del desempeño
+			eficiente de una función laboral.
 		</p>
 	</div>
-	<div class="col-sm-6 img-head">
-		<div class="d-flex justify-content-center">
-			<img src="{% static 'images/estandares/img_sece_estandares.png' %}" class="img-fluid">
-		</div>
+	<div class="col col-xl-7 justify-self-center my-sm-3 my-lg-1 text-center">
+		<img src="{% static 'images/estandares/img_sece_estandares.png' %}" class="w-75 h-75">
 	</div>
 </div>
+<div class="row justify-content-center my-5">
+	<div class="col-9">
+		<p>Éste describe lo que una persona debe ser capaz de hacer; la forma en que puede juzgarse si lo que hizo está bien
+			hecho, así como las condiciones en que la persona debe mostrar su aptitud.
 
-<!-- Estandares texto -->
-<div class="row justify-content-center align-items-center">
-	<div class="col-sm-12 txt__container__estandar__competencias">
-		<div class="txt__estandares">
-			<p>Éste describe lo que una persona debe ser capaz de hacer; la forma en que puede juzgarse si lo que hizo está bien hecho, así como las condiciones en que la persona debe mostrar su aptitud.</p>
-			<br>
-			<p>Se distinguen 5 niveles de competencia, que tienen como base de caracterización el distinto grado de autonomía en la ejecución de los trabajos y los diferentes grados de responsabilidad que pueden identificarse en el desempeño de una actividad.</p>
-		</div>
+			Se distinguen 5 niveles de competencia, que tienen como base de caracterización el distinto grado de autonomía en
+			la ejecución de los trabajos y los diferentes grados de responsabilidad que pueden identificarse en el desempeño
+			de una actividad.
+		</p>
 	</div>
 </div>
-
-<div class="row justify-content-center align-items-center">
-	<div class="cards__container__estandar">
-		<div class="row text-center">
-			<div class="col-sm-12 txt__estandares__disponibles">
-				<h2 class="txt-orange">Estándares de Competencias Disponibles</h2>
-				<p>La Entidad de Certificación y Evaluación Santillana ofrece los siguientes estándares:</p>
-				<br>
-				<h2 class="txt-orange">Consulta las Normas Técnicas</h2>
-			</div>
-		</div>
-		<div class="row text-center cards__section__estandares">
-			<div class="col-sm-4">
-				<div class="row">
-					<div class="d-flex justify-content-center">
-						<div class="card card__estandares__red  text-center">
-							<img src="{% static 'icons/estandares/icon_ribete.svg' %}" class="icons__92 position-absolute start-50 translate-middle " alt="">
-							<div class="card-body d-flex flex-column justify-content-center card__txt__estandares">
-								<h2 class="card-title">EC0076</h2>
-								<div class="mt-4">
-									<p>Evaluación de la competencia de candidatos con base en Estándares de Competencia.</p>
-									<button class="btn__derechos">Descargar</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="row">
-					<div class="col-sm-12 d-flex justify-content-center">
-						<div class="card card__estandares__orange  text-center">
-							<img src="{% static 'icons/estandares/icon_lap.svg' %}" class="icons__92 position-absolute start-50 translate-middle " alt="">
-							<div class="card-body d-flex flex-column justify-content-center card__txt__estandares">
-								<h2 class="card-title">EC0084</h2>
-								<div class="mt-4">
-									<p>Uso didáctico de las tecnologías de información y comunicación en procesos de aprendizaje: nivel básico.</p>
-									<button class="btn__derechos">Descargar</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="row">
-					<div class="col-sm-12 d-flex justify-content-center">
-						<div class="card card__estandares__blue  text-center">
-							<img src="{% static 'icons/estandares/icon_lectura.svg' %}" class="icons__92 position-absolute start-50 translate-middle " alt="">
-							<div class="card-body d-flex flex-column justify-content-center card__txt__estandares">
-								<h2 class="card-title">EC0120.01</h2>
-								<div class="mt-4">
-									<p>Promoción de la lectura.</p>
-									<button class="btn__derechos">Descargar</button>
-								</div>
-							</div>
-						</div>
+<div class="container bg-bone p-5">
+	<h2 class="text-center cor-salmon">Estándares de Competencias disponibles</h2>
+	<p class="text-center">La Entidad de Certificación y Evaluación Santillana ofrece los siguientes estándares:</p>
+	<h3 class="text-center cor-salmon">Consulta las Normas Técnicas</h3>
+	<br>
+	<div class="row row-cols-sm-1 row-cols-lg-2 row-cols-xl-3 my-5">
+		<div class="col my-5">
+			<div class="card position-relative h-100 bg-salmon">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st"
+					src="{% static 'icons/estandares/icon_capital.svg' %}" alt="" srcset="">
+				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center h-100">
+					<h4 class="fw-bold">EC0076 </h4>
+					<p class="card-text mt-4 h-50">
+						Evaluación de la competencia de candidatos con base en Estándares de Competencia.
+					</p>
+					<div class="align-self-end">
+						<button class="btn btn-white rounded-5 w-75">Descargar</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row text-center cards__section__estandares">
-			<div class="col-sm-4">
-				<div class="row">
-					<div class="d-flex justify-content-center">
-						<div class="card card__estandares__purple  text-center">
-							<img src="{% static 'icons/estandares/icon_capital.svg' %}" class="icons__92 position-absolute start-50 translate-middle " alt="">
-							<div class="card-body d-flex flex-column justify-content-center card__txt__estandares">
-								<h2 class="card-title">EC0217.01</h2>
-								<div class="mt-4">
-									<p>Impartición de cursos de formación del capital humano de manera presencial grupal.</p>
-									<button class="btn__derechos">Descargar</button>
-								</div>
-							</div>
-						</div>
+		<div class="col my-5">
+			<div class="card position-relative h-100 bg-salmon">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st"
+					src="{% static 'icons/estandares/icon_capital.svg' %}" alt="" srcset="">
+				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
+					<h4 class="fw-bold">EC0084 </h4>
+					<p class="card-text mt-4  h-50">
+						Uso didáctico de las tecnologías de información y comunicación en procesos de aprendizaje: nivel básico.
+					</p>
+					<div>
+						<button class="btn btn-white rounded-5 w-75">Descargar</button>
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-4">
-				<div class="row">
-					<div class="col-sm-12 d-flex justify-content-center">
-						<div class="card card__estandares__green  text-center">
-							<img src="{% static 'icons/estandares/icon_competencias.svg' %}" class="icons__92 position-absolute start-50 translate-middle " alt="">
-							<div class="card-body d-flex flex-column justify-content-center card__txt__estandares">
-								<h2 class="card-title">EC0447</h2>
-								<div class="mt-4">
-									<p>Desarrollo de prácticas de aprendizaje por competencias.</p>
-									<button class="btn__derechos">Descargar</button>
-								</div>
-							</div>
-						</div>
+		</div>
+		<div class="col my-5">
+			<div class="card position-relative h-100 bg-salmon">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st"
+					src="{% static 'icons/estandares/icon_capital.svg' %}" alt="" srcset="">
+				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
+					<h4 class="fw-bold">EC0120.01</h4>
+					<p class="card-text mt-4 h-50">
+						Promoción de la lectura.
+					</p>
+					<div>
+						<button class="btn btn-white rounded-5 w-75">Descargar</button>
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-4">
-				<div class="row">
-					<div class="col-sm-12 d-flex justify-content-center">
-						<div class="card card__estandares__red  text-center">
-							<img src="{% static 'icons/estandares/icon_liderazgo.svg' %}" class="icons__92 position-absolute start-50 translate-middle " alt="">
-							<div class="card-body d-flex flex-column justify-content-center card__txt__estandares">
-								<h2 class="card-title">EC0507 </h2>
-								<div class="mt-4">
-									<p>Liderazgo para la autonomía de gestión en centros de trabajo educativos.</p>
-									<button class="btn__derechos">Descargar</button>
-								</div>
-							</div>
-						</div>
+		</div>
+		<div class="col my-5">
+			<div class="card position-relative h-100 bg-salmon">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st"
+					src="{% static 'icons/estandares/icon_capital.svg' %}" alt="" srcset="">
+				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
+					<h4 class="fw-bold">EC0217.01</h4>
+					<p class="card-text mt-4 h-50">
+						Impartición de cursos de formación del capital humano de manera presencial grupal.
+					</p>
+					<div>
+						<button class="btn btn-white rounded-5 w-75">Descargar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col my-5">
+			<div class="card position-relative h-100 bg-salmon">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st"
+					src="{% static 'icons/estandares/icon_capital.svg' %}" alt="" srcset="">
+				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
+					<h4 class="fw-bold">EC0447 </h4>
+					<p class="card-text mt-4 h-50">
+						Desarrollo de prácticas de aprendizaje por competencias.
+					</p>
+					<div>
+						<button class="btn btn-white rounded-5 w-75">Descargar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col my-5">
+			<div class="card position-relative h-100 bg-salmon">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st"
+					src="{% static 'icons/estandares/icon_capital.svg' %}" alt="" srcset="">
+				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
+					<h4 class="fw-bold">EC0507 </h4>
+					<p class="card-text mt-4 h-50">
+						Liderazgo para la autonomía de gestión en centros de trabajo educativos.
+					</p>
+					<div>
+						<button class="btn btn-white rounded-5 w-75">Descargar</button>
 					</div>
 				</div>
 			</div>

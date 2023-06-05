@@ -1,34 +1,34 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="{% static 'css/bootstrap/css/bootstrap.min.css' %}">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}" />
 	<!-- CSS -->
-	<link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}" />
 
 	<title>SECE</title>
 </head>
+
 <body>
-	<div class="container">
+	<div class="container-fluid" style="max-width: 1280px;">
 		{% include 'navbar.html' %}
 		<div class="row">
-		
-				<div class="green-var"></div>
+			<div class="bg-green rowb">
+			</div>
 		</div>
-	
-	
-			{% block content %}
-				
-			{% endblock content %}
-	
-	
-		
-		{% include 'footer.html' %}
+
+		{% block content %} {% endblock content %}
+
+		<!-- {% include 'footer.html' %} -->
+		<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 	</div>
 </body>
+
 </html>

@@ -467,7 +467,7 @@ body {
 	}
 
 	.section__conocer {
-		width: 1280px;
+		width: 1120px;
 		height: 826px;
 		background-color: #fffcf9;
 		border-radius: 30px;
@@ -488,6 +488,10 @@ body {
 		margin: 0;
 		padding: 0;
 
+	}
+
+	.section__head {
+		height: 531px;
 	}
 }
 	
