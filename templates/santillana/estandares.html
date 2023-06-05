@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
-<div class="row row-cols-1 row-cols-xl-2 justify-content-center align-items-center bg-green-scale">
-	<div class="col col-xl-5 px-4 cor-white ">
+<div class="row row-cols-1 row-cols-xl-2 justify-content-center align-items-center bg-bone">
+	<div class="col col-xl-5 px-4 ">
 		<h1 class="fw-bold">Estándares de <br><span class="cor-lemon">Competencia Laboral (EC)</span></h1>
 		<p class="mt-4">
 			¿Qué es un EC?
@@ -11,7 +11,7 @@
 		</p>
 	</div>
 	<div class="col col-xl-7 justify-self-center my-sm-3 my-lg-1 text-center">
-		<img src="{% static 'images/estandares/img_sece_estandares.png' %}" class="w-75 h-75">
+		<img src="{% static 'images/estandares/img_sece_estandares.png' %}" class="w-75 h-75 ">
 	</div>
 </div>
 <div class="row justify-content-center my-5">
@@ -25,16 +25,18 @@
 		</p>
 	</div>
 </div>
-<div class="container bg-bone p-5">
+
+<!-- Estandares -->
+<div class="container bg-bone p-5 rounded-5 shadow">
 	<h2 class="text-center cor-salmon">Estándares de Competencias disponibles</h2>
 	<p class="text-center">La Entidad de Certificación y Evaluación Santillana ofrece los siguientes estándares:</p>
 	<h3 class="text-center cor-salmon">Consulta las Normas Técnicas</h3>
 	<br>
 	<div class="row row-cols-sm-1 row-cols-lg-2 row-cols-xl-3 my-5">
 		<div class="col my-5">
-			<div class="card position-relative h-100 bg-salmon">
-				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st"
-					src="{% static 'icons/estandares/icon_capital.svg' %}" alt="" srcset="">
+			<div class="card position-relative h-100 bg-salmon rounded-5 shadow">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
+					src="{% static 'icons/estandares/icon_ribete.svg' %}" alt="" srcset="">
 				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center h-100">
 					<h4 class="fw-bold">EC0076 </h4>
 					<p class="card-text mt-4 h-50">
@@ -47,9 +49,9 @@
 			</div>
 		</div>
 		<div class="col my-5">
-			<div class="card position-relative h-100 bg-salmon">
-				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st"
-					src="{% static 'icons/estandares/icon_capital.svg' %}" alt="" srcset="">
+			<div class="card position-relative h-100 bg-naranja rounded-5 shadow">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
+					src="{% static 'icons/estandares/icon_lap.svg' %}" alt="" srcset="">
 				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
 					<h4 class="fw-bold">EC0084 </h4>
 					<p class="card-text mt-4  h-50">
@@ -62,9 +64,9 @@
 			</div>
 		</div>
 		<div class="col my-5">
-			<div class="card position-relative h-100 bg-salmon">
-				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st"
-					src="{% static 'icons/estandares/icon_capital.svg' %}" alt="" srcset="">
+			<div class="card position-relative h-100 bg-azul rounded-5 shadow">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
+					src="{% static 'icons/estandares/icon_lectura.svg' %}" alt="" srcset="">
 				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
 					<h4 class="fw-bold">EC0120.01</h4>
 					<p class="card-text mt-4 h-50">
@@ -77,8 +79,8 @@
 			</div>
 		</div>
 		<div class="col my-5">
-			<div class="card position-relative h-100 bg-salmon">
-				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st"
+			<div class="card position-relative h-100 bg-morado rounded-5 shadow">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
 					src="{% static 'icons/estandares/icon_capital.svg' %}" alt="" srcset="">
 				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
 					<h4 class="fw-bold">EC0217.01</h4>
@@ -92,9 +94,9 @@
 			</div>
 		</div>
 		<div class="col my-5">
-			<div class="card position-relative h-100 bg-salmon">
-				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st"
-					src="{% static 'icons/estandares/icon_capital.svg' %}" alt="" srcset="">
+			<div class="card position-relative h-100 bg-verde-fuerte rounded-5 shadow">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
+					src="{% static 'icons/estandares/icon_competencias.svg' %}" alt="" srcset="">
 				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
 					<h4 class="fw-bold">EC0447 </h4>
 					<p class="card-text mt-4 h-50">
@@ -107,9 +109,9 @@
 			</div>
 		</div>
 		<div class="col my-5">
-			<div class="card position-relative h-100 bg-salmon">
-				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st"
-					src="{% static 'icons/estandares/icon_capital.svg' %}" alt="" srcset="">
+			<div class="card position-relative h-100 bg-salmon rounded-5 shadow">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
+					src="{% static 'icons/estandares/icon_liderazgo.svg' %}" alt="" srcset="">
 				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
 					<h4 class="fw-bold">EC0507 </h4>
 					<p class="card-text mt-4 h-50">
