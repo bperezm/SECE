@@ -15,32 +15,71 @@
 	</div>
 </div>
 
-<div class="container rounded-5 bg-bone mt-5">
-	<div class="row justify-content-center">
-		<div class="col text-center mt-4">
-			<p class="cor-salmon fs-1 fw-bold">Presidente</p>
-			<p>Secretario de Educación Pública SEP</p>
+<div class="container scroll-container rounded-5 bg-salmon h-100 ">
+	<div class="row my-5">
+		<div class="col">
+			<p>Presidente</p>
 		</div>
 	</div>
-	<div class="row justify-content-center">
-		<div class="col text-center mt-3">
-			<p class="cor-salmon fs-2 fw-bold">Presidente Suplente</p>
-			<p>Subsecretario de Educación Media Superior de SEP</p>
+	<div class="row justify-content-center align-items-center ">
+		<div class="col-8 position-relative d-sm-none d-xl-block">
+			<div class="line d-sm-none d-xl-block"></div>
+			<div class="circle left d-sm-none d-xl-block"></div>
+			<div class="circle right d-sm-none d-xl-block"></div>
+			<div class="centered-div justify-content-center ">
+				<p class="fw-bold m-1">Consejeros Propietarios</p>
+			</div>
 		</div>
-	</div>
-
-	<div class="row mt-4 justify-content-center align-items-center">
-		<div class="col-2 bg-morado h-100 text-center">
-			<p class="">f</p>
+		<div class="col-8 d-sm-block d-xl-none text-center bg-blue rounded-3 justify-content-center align-items-center">
+			<p class="fw-bold mt-1">Consejeros Propietarios</p>
 		</div>
-		<div class="col-6">
-			<p>f</p>
-		</div>
-		<div class="col-2">
-			<p>f</p>
-		</div>
-	</div>
-	
 </div>
-
+<br>
+<div class="row my-5 justify-content-center align-items-center row-cols-sm-1 row-cols-xl-3 ">
+	<div class="col col-xl-4">
+		<div class="card position-relative h-100 bg-salmon rounded-5 shadow my-sm-4  my-md-5">
+			<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
+				src="{% static 'icons/estandares/icon_liderazgo.svg' %}" alt="" srcset="">
+			<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
+				<p class="fw-bold fs-5">SECTOR GOBIERNO</p>
+				<p class="fw-bold">Nueve consejeros propietarios</p>
+				<ul>
+					<li>Educación Pública</li>
+					<li>Trabajo</li>
+					<li>Economía</li>
+					<li>Agricultura, Ganadería y Pesca</li>
+					<li>Turismo</li>
+					<li>Energía</li>
+					<li>Hacienda</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="col col-xl-4">
+		<div class="card position-relative h-100 bg-salmon rounded-5 shadow my-sm-4  my-md-5">
+			<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
+				src="{% static 'icons/estandares/icon_liderazgo.svg' %}" alt="" srcset="">
+			<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
+				<p class="fw-bold fs-5">SECTOR EMPRESARIAL</p>
+				<p class="fw-bold">Tres consejeros propietarios</p>
+				<ul>
+					<li>Consejo Coordinador Empresarial</li>
+					<li>Confederación de Cámaras Industriales
+						<li>Invitado permanente</li>
+					</li>
+					<li>Confederación de Cámaras Nacionales de Comercio, Servicios y Turismo</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="col col-xl-4">
+		<div class="card position-relative h-100 bg-salmon rounded-5 shadow my-sm-4  my-md-5">
+			<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
+				src="{% static 'icons/estandares/icon_liderazgo.svg' %}" alt="" srcset="">
+			<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
+				
+			</div>
+		</div>
+	</div>
+</div>
 {% endblock %}

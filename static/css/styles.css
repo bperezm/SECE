@@ -118,6 +118,10 @@ body {
 	color: black;
 }
 
+.bg-blue {
+	background-color: blue;
+}
+
 .rowb {
 	height: 1.8rem;
 }
@@ -303,9 +307,8 @@ body {
 		border-radius: 50%;
 	}
 
-	.scroll-container {
-    width: 100%; /* Use full width on smaller screens */
-  }
+	
+
 }
 
 .timeline {
@@ -445,12 +448,12 @@ body {
 	height: auto;
 }
 
-.circle {
+.circulo-izquierda {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: #ff0000;
-  position: absolute;
+  
 }
 
 .center-pill {
@@ -458,3 +461,52 @@ body {
 	background-color: #3ebff0;
 }
 
+
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid blue;
+}
+
+.circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.left {
+  top: 50%;
+	left: -5px;
+  transform: translate(-50%, -50%);
+}
+
+.right {
+  top: 50%;
+  right: -5px;
+  transform: translate(50%, -50%);
+}
+
+.centered-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 50px;
+  background-color: blue;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:8px
+}
+
+.scroll-container {
+	overflow: auto; /* Agregamos el scroll vertical por defecto */
+}
