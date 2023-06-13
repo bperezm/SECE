@@ -177,6 +177,7 @@ body {
 .btn-ece {
 	background: #ff7b7b;
 	color: white;
+	width: 180px;
 }
 
 /* Información */
@@ -279,15 +280,19 @@ body {
 		padding: 1%;
 		border-radius: 50%;
 	}
+
+	.container-scroll {
+		overflow-x: scroll;
+	}
 }
 
 /* Extra large devices and up */
 @media only screen and (min-width: 1200px) {
 	.icons-st {
 		background:white;
-		width: 25%;
+		width: 30%;
 		height: auto;
-		padding: 1%;
+		padding: 2%;
 		border-radius: 50%;
 	}
 
@@ -468,7 +473,7 @@ body {
   top: 50%;
   left: 0;
   right: 0;
-  border-top: 1px solid blue;
+  border-top: 1px solid #3ebff0;
 }
 
 .circle {
@@ -476,7 +481,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: blue;
+  background-color: #3ebff0;
 }
 
 .left {
@@ -498,7 +503,7 @@ body {
   transform: translate(-50%, -50%);
   width: 350px;
   height: 50px;
-  background-color: blue;
+  background-color: #3ebff0;
   color: #fff;
   text-align: center;
   display: flex;
@@ -507,6 +512,8 @@ body {
   border-radius:8px
 }
 
-.scroll-container {
-	overflow: auto; /* Agregamos el scroll vertical por defecto */
+.scrollable-div {
+	overflow-x: auto;
+	flex-wrap: nowrap;
+	max-width: 100%;
 }
