@@ -1,10 +1,10 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
-<div class="row row-cols-1 row-cols-xl-2 justify-content-center align-items-center bg-bone">
-	<div class="col col-xl-5 px-4  txt-justify">
+<div class="row row-cols-1 row-cols-xl-2 justify-content-center align-items-center bg-white">
+	<div class="col col-xl-5 px-4">
 		<h1 class="fw-bold">Certificación de <br> <span class="cor-lemon"> Competencia Laboral</span></h1>
 		<p class="mt-5">
-			La certificación se realiza con respecto a lo establecido en <span class="cor-salmon">Estándares de
+			La certificación se realiza con respecto a lo establecido en <span class="fw-bold cor-salmon">Estándares de
 				Competencia
 				Laboral (EC)</span> , lo que
 			posibilita evaluar con transparencia e igualdad a todas las personas.
@@ -17,14 +17,14 @@
 		</p>
 	</div>
 	<div class="col col-xl-7 justify-self-center my-sm-3 my-lg-1 text-center">
-		<img src="{% static 'images/certificacion/img_sece_certificacion.png' %}" class="w-75 h-75">
+		<img src="{% static 'images/certificacion/sece_certificacion.png' %}" class="w-75 h-75 mt-4">
 	</div>
 </div>
 
 <div class="row justify-content-center my-5">
 	<div class="col-9">
-		<p class="text-center mb-4 fw-bold fs-4">¿Q<span class="cor-salmon">ué es la Certificación de Competencia
-				Laboral?</span></p>
+		<h2 class="text-center mb-4 fw-bold">¿Q<span class="cor-salmon">ué es la Certificación de Competencia
+				Laboral?</span></h2>
 		<p>Somos una institución acreditada por CONOCER como Entidad de Certificación y Evaluación (ECE), con
 			experiencia en
 			capacitación, preparación de candidatos a evaluación y certificación. De esta manera Editorial Santillana
@@ -40,9 +40,9 @@
 </div>
 
 <!-- Timeline -->
-<div class="container rounded bg-bone p-1">
+<div class="container rounded bg-white p-1 shadow-bottom">
 	<br>
-	<h1 class="cor-salmon text-center mt-3">Proceso de Evaluación - Certificación</h1>
+	<h2 class="cor-salmon text-center mt-3">Proceso de Evaluación - Certificación</h2>
 	<br>
 	<!-- Preparacion -->
 	<div class="row row-cols-3 justify-content-center align-content-center mt-5 g-0">
@@ -52,7 +52,7 @@
 			</p>
 		</div>
 		<div class="col-3 text-center justify-content-center align-self-center">
-			<img class="icon-tl-salmon" src=" {% static 'icons/certificacion/icon_proceso.svg' %}" alt="" srcset="">
+			<img class="icon-tl-salmon shadow-bottom" src=" {% static 'icons/certificacion/icon_proceso.png' %}" alt="" srcset="">
 		</div>
 		<div class="col-4 align-self-center">
 			<p>
@@ -79,7 +79,7 @@
 			</p>
 		</div>
 		<div class="col-3 text-center justify-content-center align-self-center">
-			<img class="icon-tl-purple" src=" {% static 'icons/certificacion/icon_evaluacion.svg' %}" alt="" srcset="">
+			<img class="icon-tl-purple shadow-bottom" src=" {% static 'icons/certificacion/icon_evaluacion.png' %}" alt="" srcset="">
 		</div>
 		<div class="col-4 align-self-center">
 			<p>
@@ -107,7 +107,7 @@
 			</p>
 		</div>
 		<div class="col-3 text-center justify-content-center align-self-center">
-			<img class="icon-tl-orange" src=" {% static 'icons/certificacion/icon_instrumento.svg' %}" alt="" srcset="">
+			<img class="icon-tl-orange shadow-bottom" src=" {% static 'icons/certificacion/icon_instrumento.png' %}" alt="" srcset="">
 		</div>
 		<div class="col-4 align-self-center">
 			<p>
@@ -134,7 +134,7 @@
 			</p>
 		</div>
 		<div class="col-3 text-center justify-content-center align-self-center">
-			<img class="icon-tl-green" src=" {% static 'icons/certificacion/icon_cierre.svg' %}" alt="" srcset="">
+			<img class="icon-tl-green shadow-bottom" src=" {% static 'icons/certificacion/icon_cierre.png' %}" alt="" srcset="">
 		</div>
 		<div class="col-4 align-self-center">
 			<p>
@@ -149,31 +149,37 @@
 
 <!-- Tramite y entrega de certificado -->
 <div class="row text-center justify-content-center align-content-center mt-5">
-	<div class="col-8">
-		<h1>T<span class="cor-salmon">ramite y Entrega de Certificado</span></h1>
+	<div class="col-8 mt-4">
+		<h2>T<span class="cor-salmon">ramite y Entrega de Certificado</span></h2>
 		<p class="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur in, recusandae quas
 			consectetur fugiat
 			repudiandae tempora illo repellendus! Pariatur fugit nobis molestias voluptatem officia in perspiciatis eum
 			obcaecati aliquam. Aperiam?</p>
 		<picture>
-			<img src="{% static 'images/certificacion/img_sece_tramite.png' %}" alt="" srcset="">
+			<img src="{% static 'images/certificacion/sece_certificacion_tramite.png' %}" alt="" srcset="" class="w-50 mt-4">
 		</picture>
 	</div>
 </div>
 
 <!-- Costos y requisitos -->
-<div class="container bg-green rounded-5 my-5">
+<div class="container bg-verde-fuerte rounded-5 my-5 shadow-bottom">
+	<br>
+	<h2 class="text-center mt-3 cor-white">Costos y Requisitos</h2>
 	<!-- Header iconos -->
 	<div class="row row-cols-1 row-cols-xl-2 justify-content-around">
 		<div class="col-5 text-center mt-5">
-			<img class="icon-requisito" id="btncostos" src="{% static 'icons/certificacion/icon_costos.svg' %}" alt=""
+			<img class="icon-requisito shadow-bottom" id="btncostos" src="{% static 'icons/certificacion/icon_costos.png' %}" alt=""
 				srcset="">
-			<div class="mt-3 g-0 rounded-pill" id="varCosto" style="width: 100%; height: 5%"><p></p></div>
+			<div class="mt-3 g-0 rounded-pill" id="varCosto" style="width: 100%; height: 5%">
+				<p></p>
+			</div>
 		</div>
 		<div class="col-5 text-center mt-5">
-			<img class="icon-requisito" id="btnrequisitos" src="{% static 'icons/certificacion/icon_requisitos.svg' %}" alt=""
+			<img class="icon-requisito shadow-bottom" id="btnrequisitos" src="{% static 'icons/certificacion/icon_requisitos.png' %}" alt=""
 				srcset="">
-			<div class="mt-3 g-0 rounded-pill"  id="varRequisito" style="width: 100%; height: 5%;"><p></p></div>
+			<div class="mt-3 g-0 rounded-pill" id="varRequisito" style="width: 100%; height: 5%;">
+				<p></p>
+			</div>
 		</div>
 	</div>
 
@@ -237,23 +243,20 @@
 			<div class="row justify-content-center align-content-center">
 				<div class="col text-center">
 					<p class="my-4 fw-bold">Ver caracteristicas de la foto</p>
-					<button type="button " class="btn bg-white rounded-pill w-50 my-4" data-bs-toggle="modal"
-						data-bs-target="#exampleModal">
-						Descarga
-					</button>
+					<a class="btn btn-white rounded-5 w-50 my-4" href="{% static 'media/certificacion/foto.pdf' %}" download>Descargar</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <br>
-<div class="container mt-5 w-75 rounded-5 bg-naranja position-relative justify-content-center">
-		<img class="position-absolute top-0 start-50 translate-middle mb-5 rounded-circle p-2 bg-white icon-cf"
-						src="{% static 'icons/estandares/icon_capital.svg' %}" alt="" srcset="">
+<div class="container mt-5 w-75 rounded-5 bg-naranja position-relative justify-content-center shadow-bottom">
+	<img class="position-absolute top-0 start-50 translate-middle mb-5 rounded-circle p-2 bg-white icon-cf shadow-bottom"
+		src="{% static 'icons/certificacion/icon_derechos.png' %}" alt="" srcset="">
 	<div class="row text-center">
 		<div class="col mt-5">
-			<p class="fw-bold fs-1 p-3 mt-4">Derechos y Obligaciones de los Usuarios del Sistema Nacional de Competencias</p>
-			<button class="btn bg-white rounded-pill w-50 my-4">Descargar</button>
+			<h2 class="fw-bold p-3 mt-4">Derechos y Obligaciones de los Usuarios del Sistema Nacional de Competencias</h2>
+			<a class="btn btn-white rounded-5 w-50 my-4" href="{% static 'media/certificacion/derechos_obligaciones.pdf' %}" download>Descargar</a>
 		</div>
 	</div>
 </div>
@@ -271,30 +274,28 @@
 	let varCosto = document.getElementById("varCosto");
 	let varRequisito = document.getElementById("varRequisito");
 
-	
+
 	let frequisitos = function () {
 		costos.style.display = "none";
 		requisitos.style.display = "block";
 
-		
+		btncostos.style.backgroundColor = "#80cb7a";
+		btnrequisitos.style.backgroundColor = "#ffffff";
 
-		btncostos.style.backgroundColor = "#737373";
-		btnrequisitos.style.backgroundColor = "#C2C2C2";
-
-		varCosto.style.backgroundColor = "#737373";
-		varRequisito.style.backgroundColor = "#C2C2C2";
+		varCosto.style.backgroundColor = "#80cb7a";
+		varRequisito.style.backgroundColor = "#ffffff";
 	}
 
 	let fcostos = function () {
 		requisitos.style.display = "none";
 		costos.style.display = "block";
 
-		btncostos.style.backgroundColor = "#C2C2C2";
-		btnrequisitos.style.backgroundColor = "#737373";
+		btncostos.style.backgroundColor = "#ffffff";
+		btnrequisitos.style.backgroundColor = "#80cb7a";
 
-		varCosto.style.backgroundColor = "#C2C2C2";
-		varRequisito.style.backgroundColor = "#737373";
-		
+		varCosto.style.backgroundColor = "#ffffff";
+		varRequisito.style.backgroundColor = "#80cb7a";
+
 	}
 
 	if (mediaQuery.matches) {
@@ -304,11 +305,11 @@
 		requisitos.style.display = "none";
 		costos.style.display = "block";
 
-		btnrequisitos.style.backgroundColor = "#737373";
-		btncostos.style.backgroundColor = "#C2C2C2";
+		btnrequisitos.style.backgroundColor = "#80cb7a";
+		btncostos.style.backgroundColor = "#ffffff";
 
-		varCosto.style.backgroundColor = "#C2C2C2";
-		varRequisito.style.backgroundColor = "#737373";
+		varCosto.style.backgroundColor = "#ffffff";
+		varRequisito.style.backgroundColor = "#80cb7a";
 
 	} else {
 
@@ -318,11 +319,11 @@
 		requisitos.style.display = "block";
 		costos.style.display = "block";
 
-		btnrequisitos.style.backgroundColor = "#C2C2C2";
-		btncostos.style.backgroundColor = "#C2C2C2";
+		btnrequisitos.style.backgroundColor = "#ffffff";
+		btncostos.style.backgroundColor = "#ffffff";
 
-		varCosto.style.backgroundColor = "#C2C2C2";
-		varRequisito.style.backgroundColor = "#C2C2C2";
+		varCosto.style.backgroundColor = "#ffffff";
+		varRequisito.style.backgroundColor = "#ffffff";
 	}
 
 

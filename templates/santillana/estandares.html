@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
-<div class="row row-cols-1 row-cols-xl-2 justify-content-center align-items-center bg-bone">
+<div class="row row-cols-1 row-cols-xl-2 justify-content-center align-items-center bg-white">
 	<div class="col col-xl-5 px-4 ">
 		<h1 class="fw-bold">Estándares de <br><span class="cor-lemon">Competencia Laboral (EC)</span></h1>
 		<p class="mt-4">
@@ -11,7 +11,7 @@
 		</p>
 	</div>
 	<div class="col col-xl-7 justify-self-center my-sm-3 my-lg-1 text-center">
-		<img src="{% static 'images/estandares/img_sece_estandares.png' %}" class="w-75 h-75 ">
+		<img src="{% static 'images/estandares/sece_estandares.png' %}" class="w-75 h-75 mt-4">
 	</div>
 </div>
 <div class="row justify-content-center my-5">
@@ -27,98 +27,99 @@
 </div>
 
 <!-- Estandares -->
-<div class="container bg-bone p-5 rounded-5 shadow">
+<div class="container bg-bone p-5 rounded-5 shadow-bottom">
 	<h2 class="text-center cor-salmon">Estándares de Competencias disponibles</h2>
 	<p class="text-center">La Entidad de Certificación y Evaluación Santillana ofrece los siguientes estándares:</p>
+	<br>
 	<h3 class="text-center cor-salmon">Consulta las Normas Técnicas</h3>
 	<br>
 	<div class="row row-cols-sm-1 row-cols-lg-2 row-cols-xl-3 my-5">
 		<div class="col my-5">
-			<div class="card position-relative h-100 bg-salmon rounded-5 shadow">
-				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
-					src="{% static 'icons/estandares/icon_ribete.svg' %}" alt="" srcset="">
+			<div class="card position-relative h-100 bg-salmon rounded-5 shadow-bottom">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow-bottom"
+					src="{% static 'icons/estandares/icon_ribete.png' %}" alt="" srcset="">
 				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center h-100">
 					<h4 class="fw-bold">EC0076 </h4>
 					<p class="card-text mt-4 h-50">
 						Evaluación de la competencia de candidatos con base en Estándares de Competencia.
 					</p>
 					<div class="align-self-end">
-						<button class="btn btn-white rounded-5 w-75">Descargar</button>
+						<a class="btn btn-white rounded-5 w-75" href="{% static 'media/estandares/EC0076.pdf' %}" download>Descargar</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="col my-5">
-			<div class="card position-relative h-100 bg-naranja rounded-5 shadow">
-				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
-					src="{% static 'icons/estandares/icon_lap.svg' %}" alt="" srcset="">
+			<div class="card position-relative h-100 bg-naranja rounded-5 shadow-bottom">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow-bottom"
+					src="{% static 'icons/estandares/icon_lap.png' %}" alt="" srcset="">
 				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
 					<h4 class="fw-bold">EC0084 </h4>
 					<p class="card-text mt-4  h-50">
 						Uso didáctico de las tecnologías de información y comunicación en procesos de aprendizaje: nivel básico.
 					</p>
 					<div>
-						<button class="btn btn-white rounded-5 w-75">Descargar</button>
+						<a class="btn btn-white rounded-5 w-75" href="{% static 'media/estandares/EC0084.pdf' %}" download>Descargar</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="col my-5">
-			<div class="card position-relative h-100 bg-azul rounded-5 shadow">
-				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
-					src="{% static 'icons/estandares/icon_lectura.svg' %}" alt="" srcset="">
+			<div class="card position-relative h-100 bg-azul rounded-5 shadow-bottom">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow-bottom"
+					src="{% static 'icons/estandares/icon_lectura.png' %}" alt="" srcset="">
 				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
 					<h4 class="fw-bold">EC0120.01</h4>
 					<p class="card-text mt-4 h-50">
 						Promoción de la lectura.
 					</p>
 					<div>
-						<button class="btn btn-white rounded-5 w-75">Descargar</button>
+						<a class="btn btn-white rounded-5 w-75" href="{% static 'media/estandares/EC0120.pdf' %}" download>Descargar</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="col my-5">
-			<div class="card position-relative h-100 bg-morado rounded-5 shadow">
-				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
-					src="{% static 'icons/estandares/icon_capital.svg' %}" alt="" srcset="">
+			<div class="card position-relative h-100 bg-morado rounded-5 shadow-bottom">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow-bottom"
+					src="{% static 'icons/estandares/icon_capital.png' %}" alt="" srcset="">
 				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
 					<h4 class="fw-bold">EC0217.01</h4>
 					<p class="card-text mt-4 h-50">
 						Impartición de cursos de formación del capital humano de manera presencial grupal.
 					</p>
 					<div>
-						<button class="btn btn-white rounded-5 w-75">Descargar</button>
+						<a class="btn btn-white rounded-5 w-75" href="{% static 'media/estandares/EC0217.pdf' %}" download>Descargar</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="col my-5">
-			<div class="card position-relative h-100 bg-verde-fuerte rounded-5 shadow">
-				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
-					src="{% static 'icons/estandares/icon_competencias.svg' %}" alt="" srcset="">
+			<div class="card position-relative h-100 bg-verde-fuerte rounded-5 shadow-bottom">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow-bottom"
+					src="{% static 'icons/estandares/icon_competencias.png' %}" alt="" srcset="">
 				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
 					<h4 class="fw-bold">EC0447 </h4>
 					<p class="card-text mt-4 h-50">
 						Desarrollo de prácticas de aprendizaje por competencias.
 					</p>
 					<div>
-						<button class="btn btn-white rounded-5 w-75">Descargar</button>
+						<a class="btn btn-white rounded-5 w-75" href="{% static 'media/estandares/EC0447.pdf' %}" download>Descargar</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="col my-5">
-			<div class="card position-relative h-100 bg-salmon rounded-5 shadow">
-				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
-					src="{% static 'icons/estandares/icon_liderazgo.svg' %}" alt="" srcset="">
+			<div class="card position-relative h-100 bg-salmon rounded-5 shadow-bottom">
+				<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow-bottom"
+					src="{% static 'icons/estandares/icon_liderazgo.png' %}" alt="" srcset="">
 				<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
 					<h4 class="fw-bold">EC0507 </h4>
 					<p class="card-text mt-4 h-50">
 						Liderazgo para la autonomía de gestión en centros de trabajo educativos.
 					</p>
 					<div>
-						<button class="btn btn-white rounded-5 w-75">Descargar</button>
+						<a class="btn btn-white rounded-5 w-75" href="{% static 'media/estandares/EC0507.pdf' %}" download>Descargar</a>
 					</div>
 				</div>
 			</div>

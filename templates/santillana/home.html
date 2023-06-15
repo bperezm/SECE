@@ -2,27 +2,29 @@
 
 <div class="row row-cols-1 row-cols-xl-2 justify-content-center align-items-center bg-green-scale">
 
-	<div class="col col-xl-5 px-4 cor-white txt-justify">
+	<div class="col col-xl-5 px-4 cor-white">
 		<h1>¡Bienvenidos!</h1>
 		<p>
 			Actualmente las instituciones educativas se encuentran inmersas en
 			ambientes altamente competitivos por lo que deben contar con procesos de
 			calidad y acreditación para determinar su éxito, por tal motivo
-			Editorial Santillana y su Entidad de Certificación y Evaluación (ECE)
+			<span class="fw-bold cor-white">Editorial Santillana</span> y su <span class="fw-bold cor-white">Entidad de
+				Certificación y Evaluación</span> (ECE)
 			ofrece capacitación, evaluación y certificación en diversos estándares
-			aprobados por el Consejo Nacional de Normalización y Certificación de
-			Competencias Laborales (CONOCER).
+			aprobados por el <span class="fw-bold cor-white">Consejo Nacional de Normalización y Certificación de
+				Competencias Laborales</span> (CONOCER).
 		</p>
 	</div>
 	<div class="col col-xl-7 justify-self-center my-sm-3 my-lg-1 text-center">
-		<img src="{% static 'images/img_sece_01.png' %}" class="w-75 h-75 mt-4">
+		<img src="{% static 'images/shadow-index-01.png' %}" class="w-75 h-75 mt-4 ">
 	</div>
 </div>
 
 <div class="row justify-content-center my-5">
 	<div class="col-7">
-		<h1 class="text-center mb-4">¿Q<span class="cor-salmon">uienes Somos?</span></h1>
-		<p>Somos una institución acreditada por <span class="fw-bold cor-salmon">CONOCER</span> como Entidad de Certificación y Evaluación (ECE), con
+		<h2 class="text-center mb-4">¿Q<span class="cor-salmon">uienes Somos?</span></h2>
+		<p>Somos una institución acreditada por <span class="fw-bold cor-salmon">CONOCER</span> como Entidad de
+			Certificación y Evaluación (ECE), con
 			experiencia en
 			capacitación, preparación de candidatos a evaluación y certificación. De esta manera Editorial Santillana
 			contribuye en el desarrollo de personas competentes que hacen más productiva nuestra sociedad para el
@@ -38,7 +40,7 @@
 
 <div class="row row-cols-1 row-cols-xl-2 justify-content-center my-5">
 	<div class="col-sm-7 col-xl-4 my-sm-5 my-md-5 my-xl-4">
-		<div class="card position-relative card-mision h-100 rounded-5">
+		<div class="card position-relative card-mision h-100 rounded-5 shadow-bottom">
 			<img class="position-absolute top-0 start-50 translate-middle w-25 mb-5 img-container"
 				src="{% static 'icons/index/icon_flecha.svg' %}" alt="" srcset="">
 			<div class="mb-4"></div>
@@ -51,7 +53,7 @@
 		</div>
 	</div>
 	<div class="col-sm-7 col-xl-4 my-sm-5 my-md-5 my-xl-4">
-		<div class="card position-relative card-vision h-100 rounded-5">
+		<div class="card position-relative card-vision h-100 rounded-5 shadow-bottom">
 			<img class="position-absolute top-0 start-50 translate-middle w-25 mb-5 img-container"
 				src="{% static 'icons/index/icon_bascula.svg' %}" alt="" srcset="">
 			<div class="mb-4"></div>
@@ -59,7 +61,7 @@
 				<h2 class="card-title fw-bold">Código de ética</h2>
 				<p class="card-text">Conoce nuestro código de ética, un instrumento que muestras las normas, reglamentos
 					y valores que han sido establecidos para regular nuestras actividades. </p>
-				<button class="btn mt-4 btn-ece rounded-pill">Ver detalles</button>
+				<a class="btn mt-4 btn-salmon w-50 rounded-pill fw-bold" href="{% url 'etica' %}">Ver detalles</a>
 			</div>
 		</div>
 	</div>

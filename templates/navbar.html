@@ -1,7 +1,15 @@
+{% load static %}
 <div class="row">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light align fixed-top">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Navbar</a>
+		<div class="container-fluid position-relative">
+			<div class="row">
+				<div class="col">
+					<a class="navbar-brand" href="{% url 'home' %}" >
+						<img src="{% static 'icons/sece.png' %}"  alt="" class="w-25 rounded-pill ">
+					</a>
+
+				</div>
+			</div>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
 				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -14,20 +22,23 @@
 							Entidad de Certificación y Evaluación
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<li><a class="dropdown-item" href="#">Action</a></li>
-							<li><a class="dropdown-item" href="#">Another action</a></li>
-							<li><a class="dropdown-item" href="#">Something else here</a></li>
+							<li><a class="dropdown-item" href="{% url 'conocer' %}">¿Que es Conocer?</a></li>
+							<li><a class="dropdown-item" href="{% url 'estandares' %}">Estandares de Competencia Laboral</a></li>
+							<li><a class="dropdown-item" href="{% url 'certificacion' %}">Certificación de Competencia Laboral</a>
+							</li>
+							<li><a class="dropdown-item" href="{% url 'etica' %}">Derechos y Obligaciones de los Usuarios</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Información</a>
+						<a class="nav-link" href="{% url 'informacion' %}"">Información</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contacto</a>
+					<li class=" nav-item">
+							<a class="nav-link" href="{% url 'contacto' %}"">Contacto</a>
 					</li>
 				</ul>
+				
 			</div>
+			
 		</div>
 	</nav>
-
 </div>

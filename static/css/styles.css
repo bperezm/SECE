@@ -157,10 +157,13 @@ body {
 }
 
 .img-container {
-	background:antiquewhite;
+	background:white;
 	padding: 10px;
 	border-radius: 50%;
-}
+	box-shadow: 1px 13px 14px -3px rgba(0,0,0,0.76);
+	-webkit-box-shadow: 1px 13px 14px -3px rgba(0,0,0,0.76);
+	-moz-box-shadow: 1px 13px 14px -3px rgba(0,0,0,0.76);
+}	
 
 .card-mision {
 	background-color: #21a6a4;
@@ -174,11 +177,29 @@ body {
 	transform: rotate(1deg) ;
 }
 
-.btn-ece {
+.btn-salmon {
 	background: #ff7b7b;
 	color: white;
-	width: 180px;
 }
+
+.btn-salmon:hover {
+	background: white;
+	color: black;
+}
+
+.btn-white {
+	background: white;
+	color: black;
+	font-weight: bold;
+	border-color: white;
+	transition-duration: 0.4s;
+}
+
+.btn-white:hover {
+	background-color: #80cb7a; /* Green */
+  color: white;
+}
+
 
 /* Información */
 .conocer {
@@ -212,18 +233,7 @@ body {
 }
 
 
-.btn-white {
-	background: white;
-	color: black;
-	font-weight: bold;
-	border-color: white;
-	transition-duration: 0.4s;
-}
 
-.btn-white:hover {
-	background-color: #4CAF50; /* Green */
-  color: white;
-}
 
 /* Medium devices and up*/
 @media only screen and (min-width: 576px) {
@@ -281,8 +291,12 @@ body {
 		border-radius: 50%;
 	}
 
-	.container-scroll {
+	.scrollable-div {
+		display: flex;
+		height: auto;
 		overflow-x: scroll;
+		overscroll-behavior-x: contain;
+		scroll-snap-type: x mandatory;
 	}
 }
 
@@ -442,7 +456,7 @@ body {
 
 
 .icon-requisito {
-	width: 30%;
+	width: 20%;
 	height: auto;
 	border-radius: 50%;
 	padding: 2%;
@@ -512,8 +526,8 @@ body {
   border-radius:8px
 }
 
-.scrollable-div {
-	overflow-x: auto;
-	flex-wrap: nowrap;
-	max-width: 100%;
+.shadow-bottom {
+	box-shadow: 1px 13px 14px -3px rgba(0,0,0,0.76);
+	-webkit-box-shadow: 1px 13px 14px -3px rgba(0,0,0,0.76);
+	-moz-box-shadow: 1px 13px 14px -3px rgba(0,0,0,0.76);
 }

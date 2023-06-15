@@ -1,112 +1,104 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
 <!-- Certificación -->
-<div class="row row row-cols-1 row-cols-xl-2 justify-content-center align-items-center bg-bone">
-	<div class="col col-xl-5 px-4 txt-justify">
-		<h1>¿Qué es el<span class="cor-green"> Conocer?</span></h1>
-		<p>
-			El Consejo Nacional de Normalización y Certificación de Competencias Laborales (CONOCER) es una entidad paraestatal del gobierno federal mexicano, sectorizada en la Secretaría de Educación Pública y encargada de promover el Sistema Nacional de Competencias para contribuir a la competitividad económica, al desarrollo educativo y al progreso social de México, con base en el fortalecimiento del capital humano.
+<div class="row row row-cols-1 row-cols-xl-2 justify-content-center align-items-center bg-white">
+	<div class="col col-xl-5 px-4 ">
+		<h1 class="fw-bold">¿Qué es el<span class="cor-green"> Conocer?</span></h1>
+		<p class="mt-3">
+			El Consejo Nacional de Normalización y Certificación de Competencias Laborales (CONOCER) es una entidad
+			paraestatal del gobierno federal mexicano, sectorizada en la Secretaría de Educación Pública y encargada de
+			promover el Sistema Nacional de Competencias para contribuir a la competitividad económica, al desarrollo
+			educativo y al progreso social de México, con base en el fortalecimiento del capital humano.
 			<br><br>
 			El CONOCER cuenta con un órgano de gobierno de alta relevancia y con participación tripartita.
 		</p>
 	</div>
 	<div class="col col-xl-7 justify-self-center my-sm-3 my-lg-1 text-center">
-			<img src="{% static 'images/conocer/img_conocer_img.png' %}" class="w-75 h-75">
+		<img src="{% static 'images/conocer/sece_conocer.png' %}" class="w-75 h-75 mt-4">
 	</div>
 </div>
 <br>
-<div class="container scroll-container rounded-5 bg-bone h-100 mt-5">
+<div class="container rounded-5 bg-white mt-5">
 	<div class="row my-5">
 		<div class="col text-center mt-3">
-			<p class="fw-bold fs-3 cor-salmon">Presidente</p>
+			<h2 class="fw-bold cor-salmon">Presidente</h2>
 			<p>Secretario de Educación Pública SEP</p>
 			<br>
-			<p class="fw-bold fs-5 cor-salmon">Presidente Suplente</p>
+			<h3 class="fw-bold cor-salmon">Presidente Suplente</h3>
 			<p>Subsecretario de Educación Media Superior de la SEP</p>
 		</div>
 	</div>
-	<br>
-	<div class="row justify-content-center align-items-center ">
-		<div class="col-8 position-relative d-sm-none d-xl-block">
-			<div class="line d-sm-none d-xl-block"></div>
-			<div class="circle left d-sm-none d-xl-block"></div>
-			<div class="circle right d-sm-none d-xl-block"></div>
-			<div class="centered-div justify-content-center ">
-				<p class="fw-bold m-1">Consejeros Propietarios</p>
+	<div class="row justify-content-center">
+		<div class="col">
+			<div class="scrollable-div">
+				<div class="row justify-content-center align-items-center my-4">
+					<div class="col-8 position-relative ">
+						<div class="line"></div>
+						<div class="circle left"></div>
+						<div class="circle right"></div>
+						<div class="centered-div justify-content-center ">
+							<p class="fw-bold m-1">Consejeros Propietarios</p>
+						</div>
+					</div>
+					<br>
+					<div class="d-flex justify-content-center my-5">
+						<br>
+						<div class="card position-relative bg-salmon rounded-5 shadow my-sm-4  my-md-5 me-3"
+							style="width: 20rem; height: auto">
+							<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
+								src="{% static 'icons/conocer/icon_gobierno.png' %}" alt="" srcset="">
+							<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
+								<p class="fw-bold fs-5">SECTOR GOBIERNO</p>
+								<p class="fw-bold">Nueve consejeros propietarios</p>
+								<ul>
+									<li>Educación Pública</li>
+									<li>Trabajo</li>
+									<li>Economía</li>
+									<li>Agricultura, Ganadería y Pesca</li>
+									<li>Turismo</li>
+									<li>Energía</li>
+									<li>Hacienda</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card position-relative bg-salmon rounded-5 shadow my-sm-4  my-md-5 ms-3 me-3"
+							style="width: 24rem; height: 30rem">
+							<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
+								src="{% static 'icons/conocer/icon_empresarial.png' %}" alt="" srcset="">
+							<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center h-100">
+								<p class="fw-bold fs-5">SECTOR EMPRESARIAL</p>
+								<p class="fw-bold">Tres consejeros propietarios</p>
+								<ul>
+									<li>Consejo Coordinador Empresarial</li>
+									<li>Confederación de Cámaras Industriales
+									<li style="list-style: none;">- Invitado permanente</li>
+									</li>
+									<li>Confederación de Cámaras Nacionales de Comercio, Servicios y Turismo</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card position-relative bg-salmon rounded-5 shadow my-sm-4  my-md-5 ms-3"
+							style="width: 20rem; height: 30rem">
+							<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
+								src="{% static 'icons/conocer/icon_laboral.png' %}" alt="" srcset="">
+							<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
+								<p class="fw-bold fs-5">SECTOR GOBIERNO</p>
+								<p class="fw-bold">Nueve consejeros propietarios</p>
+								<ul>
+									<li>Congreso del Trabajo</li>
+									<li>Confederación Revolucionaria de Obreros y Campesinos</li>
+									<li>Confederación Revolucionaria de México
+									<li style="list-style: none;">- Invitado Permanente</li>
+									</li>
+									<li>Agricultura, Ganadería y Pesca</li>
+									<li>Federación Nacional de Sindicatos Independientes</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="col-8 d-sm-block d-xl-none text-center bg-blue rounded-3 justify-content-center align-items-center">
-			<p class="fw-bold mt-1">Consejeros Propietarios</p>
-		</div>
-</div>
-<br>
-<div class="row">
-	<div class="col">
-		<div class="scrollable-div">
-			<div class="d-flex">
-				<div class="card position-relative bg-salmon rounded-5 shadow my-sm-4  my-md-5 p-2 " style="width: 50rem; height: 30rem">
-					<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
-					src="{% static 'icons/conocer/icon_gobierno.svg' %}" alt="" srcset="">
-					<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
-						<p class="fw-bold fs-5">SECTOR GOBIERNO</p>
-						<p class="fw-bold">Nueve consejeros propietarios</p>
-						<ul>
-							<li>Educación Pública</li>
-							<li>Trabajo</li>
-							<li>Economía</li>
-							<li>Agricultura, Ganadería y Pesca</li>
-							<li>Turismo</li>
-							<li>Energía</li>
-							<li>Hacienda</li>
-						</ul>
-					</div>
-				</div>
-				<div class="card position-relative bg-salmon rounded-5 shadow my-sm-4  my-md-5 p-2" style="width: 50rem; height: 30rem">
-					<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
-						src="{% static 'icons/conocer/icon_empresarial.svg' %}" alt="" srcset="">
-					<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center h-100">
-						<p class="fw-bold fs-5">SECTOR EMPRESARIAL</p>
-						<p class="fw-bold">Tres consejeros propietarios</p>
-						<ul>
-							<li>Consejo Coordinador Empresarial</li>
-							<li>Confederación de Cámaras Industriales
-								<li style="list-style: none;">- Invitado permanente</li>
-							</li>
-							<li>Confederación de Cámaras Nacionales de Comercio, Servicios y Turismo</li>
-						</ul>
-					</div>
-				</div>
-				<div class="card position-relative bg-salmon rounded-5 shadow my-sm-4  my-md-5 p-2" style="width: 50rem; height: 30rem">
-					<img class="position-absolute top-0 start-50 translate-middle mb-5 icons-st shadow"
-						src="{% static 'icons/conocer/icon_laboral.svg' %}" alt="" srcset="">
-					<div class="card-body my-sm-3 my-md-4 my-lg-5 p-sm-4 text-center">
-						<p class="fw-bold fs-5">SECTOR GOBIERNO</p>
-						<p class="fw-bold">Nueve consejeros propietarios</p>
-						<ul>
-							<li>Congreso del Trabajo</li>
-							<li>Confederación Revolucionaria de Obreros y Campesinos</li>
-							<li>Confederación Revolucionaria de México
-								<li style="list-style: none;">- Invitado Permanente</li>
-							</li>
-							<li>Agricultura, Ganadería y Pesca</li>
-							<li>Federación Nacional de Sindicatos Independientes</li>
-		
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
-</div>
-<div class="row my-5 justify-content-center align-items-center row-cols-sm-1 row-cols-xl-3 ">
-	<div class="col col-xl-4">
-		
-	</div>
-	<div class="col col-xl-4"  >
-		
-	</div>
-	<div class="col col-xl-4" >
-		
-	</div>
-</div>
-{% endblock %}
+
+	{% endblock %}

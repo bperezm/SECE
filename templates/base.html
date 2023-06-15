@@ -15,7 +15,7 @@
 </head>
 
 <body>
-	<div class="container-fluid">
+	<div class="container-fluid bg-bone">
 		{% include 'navbar.html' %}
 		<div class="row">
 			<div class="bg-green mt-5" style="height: 30px;">
@@ -25,7 +25,7 @@
 		{% block content %} {% endblock content %}
 
 		<!-- {% include 'footer.html' %} -->
-		<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+		<script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
 		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 	</div>
