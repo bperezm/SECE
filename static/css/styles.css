@@ -246,7 +246,7 @@ body {
 	}
 
 	.icon-acceso {
-		background:lightcyan;
+		background:white;
 		width: 15%;
 		height: auto;
 		padding: 1%;
@@ -265,7 +265,7 @@ body {
 	}
 
 	.icon-acceso {
-		background:lightcyan;
+		background:white;
 		width: 15%;
 		height: auto;
 		padding: 1%;
@@ -284,7 +284,7 @@ body {
 	}
 
 	.icon-acceso {
-		background:lightcyan;
+		background:white;
 		width: 15%;
 		height: auto;
 		padding: 1%;
@@ -292,12 +292,21 @@ body {
 	}
 
 	.scrollable-div {
-		display: flex;
-		height: auto;
 		overflow-x: scroll;
-		overscroll-behavior-x: contain;
-		scroll-snap-type: x mandatory;
+		white-space: nowrap;
 	}
+
+	.card-br {
+		width: 200px;
+		height: 200px;
+		margin: 10px;
+		background-color: #f0f0f0;
+		display: inline-block;
+	}
+
+	.center-card-br {
+		margin-left: calc(50vw - 105px);
+	}	
 }
 
 /* Extra large devices and up */
@@ -311,7 +320,7 @@ body {
 	}
 
 	.icon-acceso {
-		background:lightcyan;
+		background:white;
 		width: 12%;
 		height: auto;
 		padding: 1%;
@@ -530,4 +539,10 @@ body {
 	box-shadow: 1px 13px 14px -3px rgba(0,0,0,0.76);
 	-webkit-box-shadow: 1px 13px 14px -3px rgba(0,0,0,0.76);
 	-moz-box-shadow: 1px 13px 14px -3px rgba(0,0,0,0.76);
+}
+
+
+.dropdown-item:hover {
+	background-color: #80cb7a;
+	color: white;
 }

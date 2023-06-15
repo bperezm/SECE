@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}" />
 	<!-- CSS -->
 	<link rel="stylesheet" href="{% static 'css/styles.css' %}" />
 
@@ -15,18 +15,20 @@
 </head>
 
 <body>
-	<div class="container-fluid bg-bone">
+	<div class="container-fluid bg-white">
 		{% include 'navbar.html' %}
 		<div class="row">
-			<div class="bg-green mt-5" style="height: 30px;">
+			<div class="bg-green mt-5 " style="height: 30px;">
+				<img src="{% static 'icons/sece.png' %}"  alt="" class="w-25">
 			</div>
 		</div>
 
 		{% block content %} {% endblock content %}
 
-		<!-- {% include 'footer.html' %} -->
-		<script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+		{% include 'footer.html' %}
+		<script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="https://kit.fontawesome.com/6f4d60b362.js" crossorigin="anonymous"></script>
 
 	</div>
 </body>
