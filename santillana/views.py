@@ -54,4 +54,13 @@ def contacto(request):
         else:
               messages.warning(request, 'No se logro enviar tu correo correctamente, intentalo de nuevo.')
               return render(request, template_name, {'mensaje': 'No se puede enviar'})
-          
+
+
+def aviso(request):
+     template_name = "santillana/aviso.html"
+     return render(request, template_name, {})
+
+
+def condiciones(request):
+     template_name = "santillana/condiciones.html"
+     return render(request, template_name, {})
